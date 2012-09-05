@@ -13,9 +13,7 @@
 			<br /><label for="correo">CORREO</label>
 			<input type="email" id="correo" name="correo"/><br />
 			<br /><label for="telefono">TELEFONO</label>
-			<input type="tel" id="telefono" name="telefono"/>
-		</p>
-		<p>
+			<input type="tel" id="telefono" name="telefono"/><br />
 			<label for="estado">ESTADO</label>
 			<select id="estado" name="estados">
 				<option selected value="0">Elige una opción</option>
@@ -52,22 +50,18 @@
 				<option value="31">Yucatán</option>				
 				<option value="32">Zacatecas</option>
 			</select>
-			
-		</p>
-		<p>
 			<label for="colonia">COLONIA</label>
 			<input type="text" id="colonia" name="colonia"/><br />
-			<br /><label>TEMAS DE INTERES</label><br />
+		<fieldset>	
+			<legend>TEMAS DE INTERES</legend>
 			<input type="checkbox" name="temas" value="becas"/>Becas<br />
 			<input type="checkbox" name="temas" value="cursos"/>Cursos<br />
 			<input type="checkbox" name="temas" value="profesores"/>Profesores<br />
 			<input type="checkbox" name="temas" value="alumnos"/>Alumnos
-		</p>
-		<p>
+		</fieldset>
 			<label for="comentario">COMENTARIO</label>
-			<textarea id="comentario" rows="5" cols="50"></textarea>
-		</p>
-	</form>
-	
+			<textarea id="comentario" rows="5" cols="50"></textarea><br />
+			<br /><button type="submit">ENVIAR</button>
+	</form>	
 </body>
 </html>

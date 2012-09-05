@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Registro de Usuario</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<label for="correo">CORREO</label>
+			<input type="email" id="correo" name="correo" value="adys.lz@hotmail.com" disabled /><br />
+			<label for="usuario">USUARIO</label>
+			<input type="text" id="usuario" name="usuario" value="adyslz" disabled /><br />
+		</fieldset>
+		<fieldset>	
+			<legend>INTERESES DE LA PÁGINA</legend>
+			<select name="intereses" multiple>
+				<option value="articulos">Artículos</option>
+				<option value="noticias"/>Noticias</option>
+				<option value="productos"/>Productos</option>
+				<option value="promociones"/>Promociones</option>
+				<option value="descuentos"/>Descuentos</option>
+				<option value="cursos"/>Cursos</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<label for="foto">FOTO</label>
+			<input id="foto" type="file" accept="image/gif" /><br />
+			<label for="pass">CONTRASEÑA</label>
+			<input type="password" id="pass" name="pass"/>
+		</fieldset>
+		<fieldset>
+			<legend>DATOS</legend>
+			<label for="nombre">NOMBRE COMPLETO</label>
+			<input type="text" id="nombre" name="nombre"/><br />
+			<label for="direccion">DIRECCIÓN</label>
+			<input type="text" id="direccion" name="direccion"/><br />
+			<label for="telefono">TELEFONO</label>
+			<input type="tel" id="telefono" name="telefono"/><br />
+			<label for="fecnac">FECHA DE NACIMIENTO</label>
+			<input type="date" id="fecnac" name="fecnac"/><br />
+			<label>SEXO</label><br />
+			<input type="radio" name="sexo" value="femenino"/>Femenino
+			<input type="radio" name="sexo" value="masculino"/>Masculino
+		</fieldset>
+		<button type="submit">ENVIAR</button>
+		<button type="reset">LIMPIAR</button>
+	</form>
+</body>
+</html>
