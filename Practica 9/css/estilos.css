@@ -1,0 +1,49 @@
+body{
+	font-size: 1em;
+	background-image: url(http://t1.gstatic.com/images?q=tbn:ANd9GcQtxgkTLS5cZSmSbQpr2uqtNnPXHvtN1SlTVHgNaW1sxuxmHlsmxQ);
+	background-attachment: fixed;
+}
+
+header{
+	background-image: url(http://t3.gstatic.com/images?q=tbn:ANd9GcTwkmB0yn8gBZYsyIy_ZajLg6hNAwLwatRiL1CGp-SstWCZNffbwg);
+	background-repeat: repeat-x;
+	margin: 1em;
+}
+
+nav{
+	background-color: lightcyan;
+	font-size: 1.5em;
+	border-style: double;
+	border-color: cyan;
+	border-width: thick;
+	margin: .5em;	
+	width: 1000px;
+	height: 50px;
+}
+
+article{
+	margin: 1em;	
+	width: 1000px;
+	height: 300px;
+}
+
+section{
+	font-size: 2.5ex;
+	border-color: lightcyan;
+	border-style: dashed;
+	border-width: medium;
+	padding: 1em;
+	margin: .5em;
+}
+
+aside{
+	background-image: url(http://t2.gstatic.com/images?q=tbn:ANd9GcSHa8NS_H3TrJHPsvOfBW2KSzW43kSu8RJZTNkL7YJBCQIvt-8N);
+	background-repeat: repeat;
+	margin: 1em; 
+	width: 400px;
+	height: 600px; 
+}
+
+footer{
+	background-color: lightgrey;
+}
