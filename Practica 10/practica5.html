@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Creación de Usuario</title>
+	<script type="text/javascript" src="js/validacion.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+</head>
+<body>
+	<form name="formulario">
+		<fieldset>
+			<legend>CREACIÓN DE USUARIO</legend>
+			<label for="usuario">USUARIO</label>
+			<input type="text" id="usuario" name="usuario"/><br />
+			<div id="divUsuario" style="display: none">Incorrecto(Caracteres aceptados: a,b,c,...,z,A,B,C,...,Z)</div>
+			<label for="correo">CORREO</label>
+			<input type="email" id="correo" name="correo"/><br />
+			<div id="divCorreo" style="display: none">Incorrecto(ejemplo@hotmail.com)</div>			
+			<label for="pass">CONTRASEÑA</label>
+			<input type="password" id="pass" name="pass"/><br />
+			<div id="divPass" style="display: none">Incorrecto(tamaño [6 - 10], usar solo caracteres alfanumericos)</div>
+			<label for="confpass">CONFIRMACION DE CONTRASEÑA</label>
+			<input type="password" id="confpass" name="confpass"/><br />
+			<div id="divConfpass" style="display: none">Las contraseñas no coinciden</div>
+			<div id="divVacio" style="display: none">No deben existir campos vacios</div>
+			<button type="submit" onclick="valida()">ENVIAR</button>	
+		</fieldset>	
+	</form>
+</body>
+</html>

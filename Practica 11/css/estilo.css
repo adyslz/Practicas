@@ -1,0 +1,6 @@
+.div_error{
+	background-color: lightgray;;
+	color: red;
+	font-weight: bold;
+	display: none; 
+}

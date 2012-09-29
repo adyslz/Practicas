@@ -1,0 +1,11 @@
+body{
+	background-image: url("../images/fondo.png");
+	background-repeat: repeat;
+	color: white;
+	font-size: 1.5em;
+}
+div{
+	color: red;
+	font-weight: bold;
+	font-size: .5em;
+}

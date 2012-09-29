@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Registro de Usuario</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen" />	
+	<link rel="stylesheet" type="text/css" href="css/calendar-blue.css" media="screen" />
+	<script type="text/javascript" src="js/valida.js"></script>
+	<script type="text/javascript" src="js/calendar.js"></script>
+	<script type="text/javascript" src="js/calendar-es.js"></script>
+	<script type="text/javascript" src="js/calendar-setup.js"></script>
+</head>
+<body>
+	<form name="my-form" method="GET" action="practica6.html">
+		<fieldset>
+			<label for="correo">CORREO</label>
+			<input type="email" id="correo" name="correo" value="adys.lz@hotmail.com" disabled /><br />
+			<label for="usuario">USUARIO</label>
+			<input type="text" id="usuario" name="usuario" value="adyslz" disabled /><br />
+		</fieldset>
+		<fieldset>	
+		<div>
+			<legend>INTERESES DE LA PÁGINA</legend>
+			<input type="checkbox" name="intereses" value="articulos"/>Articulos<br />
+			<input type="checkbox" name="intereses" value="noticias"/>Noticias<br />
+			<input type="checkbox" name="intereses" value="productos"/>Productos<br />
+			<input type="checkbox" name="intereses" value="promociones"/>Promociones<br />
+			<input type="checkbox" name="intereses" value="descuentos"/>Descuentos<br />
+			<input type="checkbox" name="intereses" value="cursos"/>Cursos<br />
+		</div>
+		<div id="error_intereses" class="div_error">No se ha seleccionado ninguna opcion</div>
+		<fieldset>
+		<div>
+			<label for="foto">FOTO</label>
+			<input id="foto" type="file" accept="image/*" /><br />
+			<label for="pass">CONTRASEÑA</label>
+			<input type="password" id="pass" name="pass" required />
+		</div>
+		<div id="error_pass" class="div_error">El campo contraseña no puede ir vacio y debe ser de 6 a 8 caracteres</div>
+		</fieldset>
+		<fieldset>
+			<legend>DATOS</legend>
+			<div>
+				<label for="nombre">NOMBRE COMPLETO</label>
+				<input type="text" id="nombre" name="nombre"/>
+			</div>
+			<div id="error_nombre" class="div_error">El campo nombre no puede ir vacio y debe contener solo letras</div>
+		 	<div>
+				<label for="direccion">DIRECCIÓN</label>
+				<input type="text" id="direccion" name="direccion"/>
+			</div>
+			<div id="error_dir" class="div_error">El campo direccion no puede ir vacio y debe contener solo letras y numeros</div>
+			<div>			
+				<label for="telefono">TELEFONO</label>
+				<input type="tel" id="telefono" name="telefono"/>
+			</div>	
+			<div id="error_tel" class="div_error">El campo telefono no puede ir vacio y debe contener solo numeros y deben ser de 8 a 10 caracteres</div>
+			<div>
+				<label for="fecnac">FECHA DE NACIMIENTO</label>
+				<input type="text" id="fecnac" name="fecnac" readonly="readonly" />
+				<button id="trigger">elegir fecha</button>
+				<script type="text/javascript">
+				Calendar.setup(
+    			{
+      			inputField  : "fecnac",         // ID of the input field
+      			ifFormat    : "%d / %m /%Y",    // the date format
+      			button      : "trigger"       // ID of the button
+			    }
+  				);
+				</script>
+			</div>	
+			<div id="error_fecnac" class="div_error">El campo direccion no puede ir vacio</div>
+		</fieldset>
+		<fieldset>
+			<legend>SEXO</legend>			
+			<div>
+				<input type="radio" id="fem" name="sexo" value="femenino"/>Femenino
+				<input type="radio" id="mas" name="sexo" value="masculino"/>Masculino
+			</div>
+			<div id="error_sexo" class="div_error">Debe elegir una opcion</div>
+		</fieldset>
+		<!--<button type="button" onclick="validaForm()">Guardar</button>
+		<button type="submit" id="enviar" style="display: none;"></button>-->
+		<button type="submit" onclick="validaForm()">Enviar</button>
+		<button type="reset">Limpiar</button>
+	</form>
+</body>
+</html>

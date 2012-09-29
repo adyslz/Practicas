@@ -3,6 +3,10 @@
 <head>
 	<meta charset="UTF-8"/>
 	<title>Registro de Usuario</title>
+	<link rel="stylesheet"  type="text/css" href="css/calendar-estilo.css" />
+<script type="text/javascript" src="js/calendar.js"></script>
+<script type="text/javascript" src="js/calendar-es.js"></script>
+<script type="text/javascript" src="js/calendar-setup.js"></script>
 </head>
 <body>
 	<form name="my-form" method="GET">
