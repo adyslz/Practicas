@@ -1,3 +1,7 @@
+body{
+	background-color: lightblue;	
+}
+
 .div_error{
 	background-color: lightgray;;
 	color: red;
