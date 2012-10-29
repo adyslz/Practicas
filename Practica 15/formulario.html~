@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Practica 15</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+</head>
+<body>
+	<h1>Generando tablas con php</h1>
+	<form method="GET" action="php/multiplica.php">
+		<fieldset name="tablas">
+    	<legend>Ingresa la cantidad de tablas que desees</legend><br/>
+        <label for="cantidad">Cantidad de Tablas</label>
+		<input type="text" id="cantidad" name="cantidad"/><br/><br/>
+		<label for="tope">Hasta que numero</label>
+		<input type="text" id="tope" name="tope"/><br/><br/>
+		<button type="submit">Generar</button>
+		 </fieldset>
+       </form>
+</body>
+</html>

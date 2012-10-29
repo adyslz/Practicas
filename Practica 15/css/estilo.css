@@ -1,0 +1,10 @@
+fieldset{
+	font-size: 14px;
+	color: darkmagenta;
+	border-style: dotted;
+	border-color: purple;
+}
+legend{
+	font-size: 20px;
+	font-weight: bold;	
+}

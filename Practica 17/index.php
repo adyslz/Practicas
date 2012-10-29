@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="description" content="Creacion de Usuario" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+		<title>Creación de Usuario</title>
+    </head>
+	<body>
+		
+		<h3>Registro de usuario</h3>
+		<p>Para registrarse necesita llenar todos los campos</p><br />
+		<form action="index.php?log=1" method="post">
+		<fieldset>
+			<label for="usuario">Usuario</label>
+			<input type="text" id="usuario" name="usuario"/><br /><br />
+			<label for="mail">Correo</label>
+			<input type="email" id="correo" name="correo"/><br /><br />
+			<label for="cont">Contraseña</label>
+			<input type="password" id="cont" name="cont"/><br /><br />
+			<label for="conf">Confirma contraseña</label>
+			<input type="password" id="conf" name="conf"/><br /><br />
+			<button type="submit">Enviar</button>
+		</fieldset>
+		</form>
+	</body>
+</html>
+
+<?php
+if(isset($_GET['log'])and $_GET['log']==1){
+	require("class.phpmailer.php");
+	$mail= new PHPMailer();
+	$usuario=$_POST['usuario'];
+	$correo=$_POST['correo'];
+	$cont=$_POST['cont'];
+	$mail->Host="localhost";
+	$mail->From="adys.lz@hotmail.com";
+	$mail->FromName="Adriana Lopez";
+	$mail->Subject="Registro Nuevo Usuario";
+	$body='		<html>
+			<head>
+				<style type="text/css">
+					#contenido{ border:1px darkgrey; font: Arial; font-size: 14pt; width:600px;}
+				</style>
+			</head>
+			<body>
+				<div id="contenido">
+					<pre>		
+						Informacion de Usuario
+						Nombre usuario: $usuario
+						Correo: $correo
+						Contraseña: $cont
+					</pre>
+				</div>
+			</body>
+			</html>';
+	$mail->IsHTML(true);
+	$mail->MsgHTML($body);
+	if($mail->Send())
+		echo 'mensaje enviado';
+	else
+		echo 'Error!! mensaje no pudo ser enviado';
+	}	
+?>
+
+
